@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>số nguyên tố</title>
+</head>
+<body>
+    <script>
+        // tìm những số nguyên tố  nhở hơn 200
+        let n= 2;
+        let count = 0;
+        let snt = true;
+        while (n < 200){
+            snt = true;
+            for (let i = 2;i<n;i++){
+                if (n % i === 0){
+                    snt = false;
+                    break;
+                }
+
+            }if (snt){
+                document.write(n + "<br>");
+            }n++;
+        }
+    </script>
+</body>
+</html>
